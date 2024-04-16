@@ -1,19 +1,19 @@
 /* Google fonts import */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
-/* Asterisk wild card to override browser defaults */
+/* Asterisk wildcard selector to override default styles added by the browser */
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-/* General styles*/
-body{
+/* General styles */
+body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-
+    /* Generic project styles */
     color: #3a3a3a;
     font-family: 'Lato', sans-serif;
 }
@@ -82,16 +82,21 @@ nav {
     font-size: 2rem;
 }
 
-/* Main Content*/
+/* Main content */
 main {
-    background-color: lightblue;
+    /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
     margin-top: 47px;
-    
-
 }
 
-/*Footer*/
+/* Hero section */
+#hero {
+    height: 600px;
+    width: 100%;
+    background: url("../images/hero-image.webp") no-repeat center center/cover;
+}
+
+/* Footer */
 #social-networks {
     text-align: center;
     padding: 20px 0;
@@ -116,6 +121,7 @@ main {
         width: fit-content;
         padding-right: 1rem;
     }
+
     #menu {
         display: flex;
     }
@@ -139,7 +145,6 @@ main {
         /* Push main content down to accommodate larger header */
         margin-top: 79px;
     }
-
 }
 
 /* Large devices (laptops and desktops, 992px and up) */
